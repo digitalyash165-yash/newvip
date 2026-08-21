@@ -6,365 +6,420 @@
 
 <title>VIP TRADER Official</title>
 
-<!-- ================= META PIXEL ================= -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {
-    if(f.fbq)return;
+if(f.fbq)return;
 
-    n=f.fbq=function()
-    {
-        n.callMethod ?
-        n.callMethod.apply(n,arguments) :
-        n.queue.push(arguments)
-    };
+n=f.fbq=function(){
+n.callMethod ?
+n.callMethod.apply(n,arguments) :
+n.queue.push(arguments)
+};
 
-    if(!f._fbq)f._fbq=n;
+if(!f._fbq)f._fbq=n;
 
-    n.push=n;
-    n.loaded=!0;
-    n.version='2.0';
-    n.queue=[];
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
 
-    t=b.createElement(e);
-    t.async=!0;
-    t.src=v;
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
 
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s);
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
 
 }
-(window, document, 'script',
+(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '9825173663838');
-fbq('track', 'PageView');
+fbq('init','9825173663838');
+fbq('track','PageView');
 </script>
 
 <noscript>
 <img
-    height="1"
-    width="1"
-    style="display:none"
-    src="https://www.facebook.com/tr?id=9825173663838&ev=PageView&noscript=1"
-/>
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=9825173663838&ev=PageView&noscript=1">
 </noscript>
 
 
-<!-- ================= CSS ================= -->
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html,
-body {
-    width: 100%;
-    min-height: 100%;
+body{
+    width:100%;
+    min-height:100%;
 }
 
-body {
-    background: #000;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ================= BODY ================= */
 
-    padding: 12px 0;
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:Arial,Helvetica,sans-serif;
+
+    padding:10px 7px;
 }
 
 
 /* ================= MAIN CARD ================= */
 
-.card {
+.card{
+    width:100%;
+    max-width:470px;
 
-    width: 95.3%;
+    min-height:calc(100vh - 20px);
 
-    min-height: 90vh;
+    margin:0 auto;
 
-    border: 2px solid rgba(255, 215, 0, 0.40);
+    padding:26px 14px 20px;
 
-    border-radius: 32px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 
     background:
-        radial-gradient(
-            circle at 50% 30%,
-            rgba(255, 215, 0, 0.08),
-            transparent 25%
-        ),
-        linear-gradient(
-            145deg,
-            #182022 0%,
-            #111516 45%,
-            #101010 100%
-        );
+    radial-gradient(
+        circle at 50% 15%,
+        rgba(255,215,0,0.06),
+        transparent 30%
+    ),
+    linear-gradient(
+        145deg,
+        #181d1f 0%,
+        #111516 55%,
+        #0b0b0b 100%
+    );
+
+    border:1px solid rgba(255,215,0,0.28);
+
+    border-radius:20px;
 
     box-shadow:
-        0 0 35px rgba(255, 215, 0, 0.08);
-
-    padding: 48px 20px 32px;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
+    0 0 25px rgba(255,215,0,0.05);
 }
 
 
-/* ================= PHOTO ================= */
+/* ================= PROFILE PHOTO ================= */
 
-.profile {
+.profile{
+    width:84px;
+    height:84px;
 
-    width: 128px;
-    height: 128px;
+    border-radius:50%;
 
-    border-radius: 50%;
+    object-fit:cover;
 
-    object-fit: cover;
+    border:2px solid #ffd21c;
 
-    border: 5px solid #ffd21c;
+    background:#1b1b1b;
 
     box-shadow:
-        0 0 25px rgba(255, 215, 0, 0.65);
+    0 0 16px rgba(255,210,28,0.35);
 
-    margin-bottom: 42px;
+    margin-bottom:17px;
 }
 
 
 /* ================= TITLE ================= */
 
-.title {
+.title{
+    color:#ffd21c;
 
-    color: #ffd21c;
+    font-size:19px;
 
-    font-size: 29px;
+    line-height:1.25;
 
-    font-weight: 800;
+    font-weight:700;
 
-    letter-spacing: 1.5px;
+    letter-spacing:0.3px;
 
-    text-align: center;
+    text-align:center;
 
-    margin-bottom: 27px;
+    margin-bottom:8px;
 }
 
 
 /* ================= SUBTITLE ================= */
 
-.subtitle {
+.subtitle{
+    color:#ffffff;
 
-    color: #fff;
+    font-size:13px;
 
-    font-size: 24px;
+    line-height:1.4;
 
-    font-weight: 800;
+    font-weight:600;
 
-    text-align: center;
+    text-align:center;
 
-    margin-bottom: 26px;
+    margin-bottom:7px;
 }
 
 
 /* ================= MARKET ================= */
 
-.market {
+.market{
+    color:#aeb2b4;
 
-    color: #e8e8e8;
+    font-size:10.5px;
 
-    font-size: 18px;
+    line-height:1.4;
 
-    letter-spacing: 1px;
+    letter-spacing:0.3px;
 
-    text-align: center;
+    text-align:center;
 
-    margin-bottom: 40px;
+    margin-bottom:19px;
 }
 
 
 /* ================= TELEGRAM BUTTON ================= */
 
-.telegram {
+.telegram{
+    width:90%;
 
-    width: 82%;
+    max-width:370px;
 
-    min-height: 78px;
+    min-height:47px;
 
-    border-radius: 42px;
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 13px;
+
+    border-radius:25px;
 
     background:
-        linear-gradient(
-            100deg,
-            #18b9ef,
-            #1687e8
-        );
+    linear-gradient(
+        100deg,
+        #18b9ef,
+        #1687e8
+    );
 
-    color: #fff;
+    color:#ffffff;
 
-    display: flex;
+    text-decoration:none;
 
-    align-items: center;
+    text-align:center;
 
-    justify-content: center;
+    font-size:12.5px;
 
-    text-align: center;
-
-    text-decoration: none;
-
-    font-size: 20px;
-
-    font-weight: 800;
-
-    padding: 15px 20px;
+    font-weight:700;
 
     box-shadow:
-        0 12px 35px rgba(0, 174, 255, 0.32);
+    0 7px 20px rgba(0,174,255,0.20);
 
-    margin-bottom: 42px;
+    margin-bottom:19px;
 
-    transition: transform 0.2s ease;
+    transition:transform 0.2s ease;
 }
 
-.telegram:active {
+.telegram:hover{
+    transform:translateY(-1px);
+}
 
-    transform: scale(0.97);
+.telegram:active{
+    transform:scale(0.97);
 }
 
 
 /* ================= FEATURES ================= */
 
-.features {
+.features{
+    width:100%;
 
-    width: 100%;
+    display:flex;
 
-    display: flex;
+    flex-direction:column;
 
-    flex-direction: column;
+    gap:7px;
 
-    gap: 25px;
+    color:#d0d0d0;
 
-    color: #eeeeee;
+    font-size:10.5px;
 
-    font-size: 19px;
+    line-height:1.4;
 
-    text-align: center;
+    text-align:center;
 }
 
 
 /* ================= WARNING ================= */
 
-.warning {
+.warning{
+    width:100%;
 
-    margin-top: 35px;
+    margin-top:18px;
 
-    color: #bdbdbd;
+    color:#858585;
 
-    font-size: 14px;
+    font-size:8.5px;
 
-    text-align: center;
+    line-height:1.45;
+
+    text-align:center;
 }
 
 
 /* ================= FOOTER ================= */
 
-.footer {
+.footer{
+    width:90%;
 
-    width: 82%;
+    max-width:370px;
 
-    margin-top: 30px;
+    margin-top:16px;
 
-    padding: 17px 12px;
+    padding:9px 8px;
 
-    border: 2px solid rgba(150, 150, 150, 0.45);
+    border:1px solid rgba(150,150,150,0.20);
 
-    border-radius: 14px;
+    border-radius:8px;
 
-    color: #eeeeee;
+    color:#999999;
 
-    text-align: center;
+    font-size:9.5px;
 
-    font-size: 17px;
+    text-align:center;
 }
 
 
-/* YASH ADS LINK */
+/* ================= YASH ADS ================= */
 
-.footer a {
+.footer a{
+    color:#19b8f1;
 
-    color: #19b8f1;
+    text-decoration:none;
 
-    text-decoration: none;
-
-    font-weight: 800;
+    font-weight:700;
 }
 
-.footer a:active {
+.footer a:active{
+    opacity:0.75;
+}
 
-    opacity: 0.75;
+
+/* ================= VERY SMALL MOBILE ================= */
+
+@media(max-width:360px){
+
+    body{
+        padding:7px 5px;
+    }
+
+    .card{
+        padding:23px 11px 18px;
+
+        border-radius:18px;
+    }
+
+    .profile{
+        width:78px;
+        height:78px;
+
+        margin-bottom:15px;
+    }
+
+    .title{
+        font-size:17px;
+    }
+
+    .subtitle{
+        font-size:12px;
+    }
+
+    .market{
+        font-size:9.5px;
+    }
+
+    .telegram{
+        width:94%;
+
+        min-height:45px;
+
+        font-size:12px;
+    }
+
+    .features{
+        font-size:9.5px;
+    }
+
+    .warning{
+        font-size:8px;
+    }
+
+    .footer{
+        font-size:9px;
+    }
 }
 
 
 /* ================= DESKTOP ================= */
 
-@media (min-width: 700px) {
+@media(min-width:700px){
 
-    .card {
-
-        max-width: 650px;
-
-        min-height: 850px;
-
-        padding: 65px 45px 45px;
+    body{
+        padding:25px 15px;
     }
 
-    .profile {
+    .card{
+        min-height:720px;
 
-        width: 150px;
-        height: 150px;
-
-        margin-bottom: 55px;
+        padding:40px 30px 25px;
     }
 
-    .title {
-
-        font-size: 38px;
+    .profile{
+        width:105px;
+        height:105px;
     }
 
-    .subtitle {
-
-        font-size: 31px;
+    .title{
+        font-size:24px;
     }
 
-    .market {
-
-        font-size: 23px;
+    .subtitle{
+        font-size:16px;
     }
 
-    .telegram {
-
-        font-size: 26px;
-
-        min-height: 90px;
+    .market{
+        font-size:12px;
     }
 
-    .features {
+    .telegram{
+        font-size:14px;
 
-        font-size: 25px;
+        min-height:52px;
     }
 
-    .warning {
-
-        font-size: 17px;
+    .features{
+        font-size:12px;
     }
 
-    .footer {
+    .warning{
+        font-size:9px;
+    }
 
-        font-size: 23px;
+    .footer{
+        font-size:10px;
     }
 }
 
@@ -375,14 +430,12 @@ body {
 
 <body>
 
-
 <!-- ================= MAIN CARD ================= -->
 
 <div class="card">
 
 
     <!-- ================= PROFILE PHOTO ================= -->
-    <!-- अपनी फोटो को profile.jpg नाम से रखें -->
 
     <img
         src="profile.jpg"
@@ -391,18 +444,17 @@ body {
     >
 
 
-    <!-- ================= TITLE ================= -->
+    <!-- ================= MAIN TITLE ================= -->
 
     <h1 class="title">
-        Nikhil Gohdke patil (VIP trader)❤️
-
+        VIP TRADER Official
     </h1>
 
 
-    <!-- ================= DAILY UPDATE ================= -->
+    <!-- ================= SUBTITLE ================= -->
 
     <div class="subtitle">
-        🔥 DAILY MARKET UPDATES 🔥
+        Daily Market Updates
     </div>
 
 
@@ -416,16 +468,13 @@ body {
     <!-- ================= TELEGRAM BUTTON ================= -->
 
     <a
-        href="https://t.me/+2Z4WItdCidVhYWU1"
+        href="https://t.me/+60VgI7emtM83ZGY9"
         target="_blank"
         rel="noopener noreferrer"
         class="telegram"
-
-        onclick="fbq('track', 'Lead');"
+        onclick="fbq('track','Lead');"
     >
-
-        🚀 Join Free Telegram Channel
-
+        Join Free Telegram Channel
     </a>
 
 
@@ -434,31 +483,35 @@ body {
     <div class="features">
 
         <div>
-            ✔ Daily Market Updates Free
+            ✓ Daily Market Updates
         </div>
 
         <div>
-            ✔ F&amp;O Views for Study Purpose Only
+            ✓ F&amp;O Views for Educational Purposes
+        </div>
+
+        <div>
+            ✓ Market Learning &amp; Analysis
         </div>
 
     </div>
 
 
-    <!-- ================= RISK WARNING ================= -->
+    <!-- ================= WARNING ================= -->
 
     <div class="warning">
 
-        ⚠️ Market Investments are subject to Market risks
+        Market investments are subject to market risks.
+        Please consider your objectives and risk tolerance before making any investment decision.
 
     </div>
 
 
-    <!-- ================= YASH ADS ================= -->
-    <!-- Yash Ads पर क्लिक करने से भी Telegram खुलेगा -->
+    <!-- ================= FOOTER ================= -->
 
     <div class="footer">
 
-        🔥 Managed by
+        Managed by
 
         <a
             href="https://t.me/+60VgI7emtM83ZGY9"
@@ -472,7 +525,6 @@ body {
 
 
 </div>
-
 
 </body>
 </html>
